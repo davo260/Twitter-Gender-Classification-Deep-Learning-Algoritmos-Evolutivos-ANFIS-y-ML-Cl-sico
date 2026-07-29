@@ -1,0 +1,11 @@
+Modelo,Accuracy,Precision,Recall,F1-Weighted,AUC-ROC,Fase
+Logistic Regression,0.6576,0.66,0.66,0.6576,0.0,Prev
+Perceptron (TLU),0.6162,0.64,0.62,0.62,0.0,Prev
+MLP 1 capa oculta,0.6542,0.66,0.66,0.65,0.0,Prev
+MLP mejorada,0.6505,0.67,0.65,0.65,0.0,Prev
+Ensamble LR+NN (voting),0.6645,0.67,0.67,0.67,0.0,Prev
+MLP + DE (Fase 1),0.6886,0.0,0.0,0.6886,0.0,Fase 1 (EA)
+SVM (Linear),0.6266,0.6268,0.6266,0.6241,0.6676,Fase 2 (AM)
+Random Forest,0.6402,0.6398,0.6402,0.6398,0.692,Fase 2 (AM)
+XGBoost (GPU),0.5157,0.5124,0.5157,0.5089,0.5302,Fase 2 (AM)
+Stacking (SVM+RF+GB→LR),0.6514,0.6513,0.6514,0.6513,0.7025,Fase 2 (AM)
