@@ -1,0 +1,28 @@
+version: "3"
+
+tasks:
+  build:
+    desc: Build the Docker image
+    cmd: docker compose build
+
+  up:
+    desc: Start JupyterLab
+    deps: [build]
+    cmd: docker compose up -d
+    silent: true
+
+  down:
+    desc: Stop the container
+    cmd: docker compose down
+
+  logs:
+    desc: Show container logs
+    cmd: docker compose logs -f jupyter
+
+  shell:
+    desc: Open a bash shell in the container
+    cmd: docker compose exec jupyter bash
+
+  restart:
+    desc: Restart the container
+    deps: [down, up]

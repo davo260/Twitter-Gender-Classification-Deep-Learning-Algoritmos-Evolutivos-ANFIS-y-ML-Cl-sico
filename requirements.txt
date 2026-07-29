@@ -1,0 +1,23 @@
+# Data manipulation
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning / Deep Learning
+scikit-learn
+tensorflow
+keras
+
+# Jupyter
+jupyterlab
+ipywidgets
+
+# Utilities
+kagglehub
+
+# Genetic Algorithms / Evolutionary Optimization
+deap
+cma

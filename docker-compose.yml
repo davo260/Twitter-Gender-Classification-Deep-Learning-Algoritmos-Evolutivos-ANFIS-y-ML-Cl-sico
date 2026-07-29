@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    build: .
+    container_name: dl-talleres
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    restart: unless-stopped
